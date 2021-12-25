@@ -1,28 +1,19 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Our ENV Code
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version ( 3.0.1 )
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+    just run it `rspec`
 
 * Deployment instructions
+* Install all the necessary gems with ```bundle install```
+* install overcommit ```overcommit --install```
+* sign overcommit ```overcommit --sign```
+* Start your web server with ```rails server:start```
 
-* ...
-
-#   TODO
-* validate paramters
-* DOC Readme & Screen about Overcommit
+# Over Commits
+* if your write code Ruby against rubocop pre-commit reject commit until fix Rubocop
+* when push on project with code against unit test pre-push will reject pushing app
