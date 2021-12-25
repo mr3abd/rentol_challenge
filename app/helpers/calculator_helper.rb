@@ -4,7 +4,7 @@ module CalculatorHelper
 
   class << self
     def calculate(params)
-      send(params[:operation] , params)
+      send(params[:operation], params)
     end
 
     def sum(params)
@@ -12,12 +12,11 @@ module CalculatorHelper
     end
 
     def times(params)
-      Array.new(params[:first_number] , params[:second_number])
+      Array.new(params[:first_number], params[:second_number])
     end
 
     def divide(params)
       params[:first_number] / params[:second_number]
     end
   end
-
 end
