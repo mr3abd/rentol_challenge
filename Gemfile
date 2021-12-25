@@ -51,6 +51,15 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'rubocop', '=0.82.0', require: false
+  gem 'rubocop-rails', '=2.5.2', require: false
+  gem 'rubocop-performance', '=1.5.2', require: false
+  gem 'rubocop-rspec', '=1.38.1', require: false
+  gem 'overcommit', '~> 0.58.0'
+  gem 'shoulda-matchers'
+  gem 'rspec-rails'
+  gem 'rspec-activemodel-mocks'
+
 end
 
 group :development do
