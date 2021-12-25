@@ -1,24 +1,23 @@
 module CalculatorHelper
-  # intilaize
-  # Just call operation method
-  # Validation numbers & OPERATIONS
-  # call method per one
-  #
-  # API return error Check HOW
-    def self.calculate(params)
-      send(params[:OPERATION].downcase , params)
+  # DONE REFACTOR IT TO lib/calculator.rb
+  # as logic should to mv on lib not helper
+
+  class << self
+    def calculate(params)
+      send(params[:operation] , params)
     end
 
-    def self.sum(params)
-      params[:A].to_i + params[:B].to_i
+    def sum(params)
+      params[:first_number] + params[:second_number]
     end
 
-    def self.times(params)
-      Array.new(params[:A].to_i , params[:B].to_i)
+    def times(params)
+      Array.new(params[:first_number] , params[:second_number])
     end
 
-    def self.divide(params)
-      params[:A].to_i / params[:B].to_i
+    def divide(params)
+      params[:first_number] / params[:second_number]
     end
+  end
 
 end
