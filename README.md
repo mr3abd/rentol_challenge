@@ -12,7 +12,7 @@ Things you may want to cover:
 * Install all the necessary gems with ```bundle install```
 * install overcommit ```overcommit --install```
 * sign overcommit ```overcommit --sign```
-* Start your web server with ```rails server:start```
+* Start your web server with ```rails server```
 
 # Over Commits
 * if your write code Ruby against rubocop pre-commit reject commit until fix Rubocop
